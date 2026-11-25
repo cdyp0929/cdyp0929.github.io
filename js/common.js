@@ -22,7 +22,7 @@ const TOOLS = {
   rhino:        { label: '라이노',      color: 'black',  bar: '#111111', bg: '#111111', fg: '#FFFFFF', short: 'Rh' },
   keyshot:      { label: '키샷',        color: 'black',  bar: '#111111', bg: '#111111', fg: '#FFFFFF', short: 'Ks' },
   blender:      { label: '블렌더',      color: 'orange', bar: '#F5792A', bg: '#1E1E1E', fg: '#F5792A', short: 'Bl' },
-  higgsfield:   { label: '힉스필드',    color: 'black',  bar: '#111111', bg: '#111111', fg: '#D1FE17', short: 'Hf' },
+  higgsfield:   { label: '힉스필드',    color: 'lime',   bar: '#D3FF16', bg: '#111111', fg: '#D3FF16', short: 'Hf' },
   claude:       { label: 'Claude',      color: 'gray',   bar: '#D97757', bg: '#D97757', fg: '#FFFFFF', short: 'Cl' },
   gpt:          { label: 'ChatGPT',     color: 'gray',   bar: '#111111', bg: '#111111', fg: '#FFFFFF', short: 'Gp' },
   code:         { label: 'HTML·CSS·JS', color: 'gray',   bar: '#484858', bg: '#2A2A37', fg: '#FFFFFF', short: '</>' },

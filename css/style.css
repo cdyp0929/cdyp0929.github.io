@@ -119,6 +119,8 @@ img { display: block; max-width: 100%; }
 .tag[data-c="orange"] { --c: #FF9A00; --t: #FF9A00; }
 .tag[data-c="navy"]   { --c: #00005B; --t: #00005B; }
 .tag[data-c="black"]  { --c: #111111; --t: #111111; }
+.tag[data-c="lime"]   { --c: #D3FF16; --t: #111111; background: #F4FFC4; }  /* 힉스필드 연두 (흰 바탕에 연두 글자는 안 읽혀서 글자는 검정) */
+.tag[data-c="lime"]:hover { background: #E9FF8A; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
 
 /* 카드 안 작은 라벨 */
