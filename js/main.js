@@ -99,6 +99,7 @@
 
     $('#profile').innerHTML = `<div class="container">
       <h2 class="section-title">PROFILE</h2>
+      ${pr.subtitle ? `<p class="section-sub">${esc(pr.subtitle)}</p>` : ''}
       <div class="profile-grid">
         <div class="profile-card">
           ${imgTag(pr.photo, pr.name, '프로필 사진', 'profile-photo')}

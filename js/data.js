@@ -15,6 +15,7 @@ const PORTFOLIO = {
   profile: {
     name: '채동엽',
     role: 'UI/UX Designer',
+    subtitle: '기술이 지나간 흔적에 가치를 더합니다.',   // PROFILE 제목 아래 한 줄 (없으면 지우기)
     bio: '사용자 경험을 중심으로 모바일 앱과 웹을 디자인합니다. 그래픽부터 3D, 영상까지 다양한 작업을 함께 다룹니다.',
     photo: 'images/profile.jpg',          // 전신 사진 (세로로 긴 사진 추천, 약 2:3)
 

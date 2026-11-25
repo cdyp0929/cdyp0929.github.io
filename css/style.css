@@ -203,6 +203,8 @@ img { display: block; max-width: 100%; }
    ========================================================= */
 .profile { padding: 120px 0; }
 .profile .section-title { margin-bottom: 40px; }
+.profile .section-title:has(+ .section-sub) { margin-bottom: 0; }
+.section-sub { font-size: 16px; line-height: 1.6; color: var(--text-2); margin: 4px 0 40px; }
 .profile-grid { display: grid; grid-template-columns: 448px 1fr; gap: 28px; }
 .profile-right { display: grid; grid-template-rows: auto 1fr; gap: 28px; }
 .profile-row { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
