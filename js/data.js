@@ -140,6 +140,9 @@ const PORTFOLIO = {
       period: '2026.11',
       role: '기획 · 시나리오 · 연출 100%\nAI 영상 생성 · 편집 · 모션',
       type: '개인 작업 · 공모전 출품 · AI 영상',
+      links: [
+        { label: '영상 보기', url: 'https://youtu.be/Oy4rvAch8jo' },
+      ],
     },
 
     // 새 작품은 위 { ... }, 덩어리 하나를 통째로 복사해서 여기에 붙여넣고 내용을 바꾸세요.
