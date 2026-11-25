@@ -411,3 +411,5 @@ img { display: block; max-width: 100%; }
 
 /* 상세 보기 열림: 스크롤바가 사라져도 상단 메뉴가 제자리에 있도록 */
 .is-locked .gnb { left: calc(50% - var(--sbw, 0px) / 2); }
+
+.profile-bio { white-space: pre-line; }
