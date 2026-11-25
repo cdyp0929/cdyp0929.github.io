@@ -6,6 +6,7 @@ const ICON = {
   right: '<svg viewBox="0 0 28 28" fill="none"><path d="M11.5 8.5 17 14l-5.5 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   down:  '<svg viewBox="0 0 16 16" fill="none"><path d="M8 2.5v11m0 0L4 9.5m4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   up:    '<svg viewBox="0 0 16 16" fill="none"><path d="M8 13V3m0 0L4 7m4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  external: '<svg viewBox="0 0 16 16" fill="none"><path d="M5.5 3.5h7v7M12.5 3.5 4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   download: '<svg viewBox="0 0 16 16" fill="none"><path d="M8 2.5v8m0 0L4.5 7M8 10.5 11.5 7M3 13.5h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   close: '<svg viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
   pause: '<svg viewBox="0 0 24 24" fill="none"><path d="M9 5v14M15 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
@@ -112,6 +113,7 @@ const Modal = (() => {
         ${w.period ? `<div class="info-row"><span>Period</span><p>${esc(w.period)}</p></div>` : ''}
         ${w.role ? `<div class="info-row"><span>Role</span><p>${esc(w.role)}</p></div>` : ''}
         ${w.type ? `<div class="info-row"><span>Type</span><p>${esc(w.type)}</p></div>` : ''}
+        ${w.links?.length ? `<div class="info-row"><span>Links</span><div class="info-links">${w.links.map(l => `<a class="btn btn--outline info-link" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ${ICON.external}</a>`).join('')}</div></div>` : ''}
       </aside>`;
     el.scrollTop = 0;
     // 스크롤바가 사라진 만큼 오른쪽 여백을 채워서 화면(그리드)이 옆으로 밀리지 않게

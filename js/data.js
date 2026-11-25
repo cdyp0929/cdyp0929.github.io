@@ -118,6 +118,9 @@ const PORTFOLIO = {
       period: '2026.11',
       role: '기획 · UI 디자인 100%\n퍼블리싱 (AI 활용)',
       type: '개인 프로젝트 · Web',
+      links: [                                  // 상세 보기 오른쪽 카드의 링크 버튼 (없으면 지우기)
+        { label: '사이트 보기', url: 'https://cdyp0929.github.io' },
+      ],
     },
 
     {
