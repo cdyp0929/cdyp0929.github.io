@@ -22,14 +22,14 @@ const PORTFOLIO = {
     // popup: 누르면 버튼 위에 작은 박스로 글자만 보여줌 (한 번 더 누르면 닫힘)
     contacts: [
       { label: 'Email',     popup: 'klsacom409@gmail.com' },
-      { label: 'Instagram', url: 'https://instagram.com/orn.yeop_o4' },
+      { label: 'Instagram', url: 'https://instagram.com/disn_dy' },
     ],
 
     // 툴 숙련도 (level: 0~100)
     tools: [
-      { tool: 'photoshop',   level: 73 },
-      { tool: 'figma',       level: 81 },
-      { tool: 'illustrator', level: 58 },
+      { tool: 'photoshop',    level: 82 },
+      { tool: 'figma',        level: 92 },
+      { tool: 'aftereffects', level: 87 },
     ],
 
     // 스킬 태그 (color: purple, blue, orange, navy, black, gray)
@@ -65,7 +65,7 @@ const PORTFOLIO = {
     email: 'klsacom409@gmail.com',
     resume: '',                           // 이력서 PDF: files 폴더에 넣고 'files/resume.pdf' 로 적으면 버튼이 생깁니다
     links: [                              // url 또는 popup (프로필과 같은 방식)
-      { label: 'Instagram', url: 'https://instagram.com/orn.yeop_o4' },
+      { label: 'Instagram', url: 'https://instagram.com/disn_dy' },
     ],
     copyright: '© 2026 Chae dongyeop',
   },

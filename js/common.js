@@ -15,7 +15,7 @@ const ICON = {
 /* 툴 정보 (data.js 의 tools 에 쓰는 이름) */
 const TOOLS = {
   photoshop:    { label: '포토샵',      color: 'blue',   bar: '#31A8FF', bg: '#001E36', fg: '#31A8FF', short: 'Ps' },
-  figma:        { label: '피그마',      color: 'purple', bar: '#A259FF', bg: '#1E1E1E', fg: '#FFFFFF', short: 'Fg', figma: true },
+  figma:        { label: '피그마',      color: 'purple', bar: '#A259FF', bg: '#1E1E1E', fg: '#FFFFFF', short: 'Fg', img: 'images/icons/figma.png' },
   illustrator:  { label: '일러스트',    color: 'orange', bar: '#FF9A00', bg: '#330000', fg: '#FF9A00', short: 'Ai' },
   aftereffects: { label: '에프터이펙트', color: 'navy',   bar: '#9999FF', bg: '#00005B', fg: '#9999FF', short: 'Ae' },
   premiere:     { label: '프리미어 프로', color: 'navy',  bar: '#9999FF', bg: '#00005B', fg: '#9999FF', short: 'Pr' },
@@ -37,6 +37,7 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': 
 
 function toolIcon(key) {
   const t = TOOLS[key]; if (!t) return '';
+  if (t.img) return `<img class="tool-icon tool-icon--img" src="${esc(t.img)}" alt="${esc(t.label)}">`;  // 아이콘 이미지가 있으면 그걸 사용
   if (t.figma) {
     return `<svg class="tool-icon" viewBox="0 0 48 48"><rect width="48" height="48" rx="10" fill="${t.bg}"/>
       <g transform="translate(17 10)"><path d="M3.5 0h3.5v7H3.5a3.5 3.5 0 0 1 0-7Z" fill="#F24E1E"/><path d="M7 0h3.5a3.5 3.5 0 0 1 0 7H7V0Z" fill="#FF7262"/>

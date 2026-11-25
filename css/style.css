@@ -236,6 +236,7 @@ img { display: block; max-width: 100%; }
 .tools { background: var(--bg-1); border-radius: 24px; min-height: 232px; padding: 20px; display: flex; flex-direction: column; justify-content: center; gap: 20px; }
 .tool-row { display: flex; align-items: center; gap: 20px; }
 .tool-icon { width: 48px; height: 48px; flex-shrink: 0; }
+.tool-icon--img { display: block; border-radius: 10px; object-fit: cover; }
 .tool-bar { flex: 1; height: 6px; border-radius: 3px; background: var(--line-2); overflow: hidden; }
 .tool-bar span { display: block; height: 100%; border-radius: 3px; }
 .tool-pct { width: 40px; text-align: right; font-size: 13px; font-weight: 600; color: var(--text-2); }
