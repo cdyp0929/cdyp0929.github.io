@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>채동엽 포트폴리오</title>
+  <meta name="description" content="UI/UX 디자이너 채동엽의 포트폴리오">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="gnb">
+    <nav class="nav" id="nav">
+      <span class="nav-indicator"></span>
+      <a href="#home" data-target="home">Home</a>
+      <a href="#profile" data-target="profile">Profile</a>
+      <a href="#web" data-target="web">Web</a>
+      <a href="#mobile" data-target="mobile">Mobile</a>
+      <a href="#other" data-target="other">Other</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero"></section>
+    <section id="profile" class="profile"></section>
+    <section id="web" class="works-section" data-cat="web"></section>
+    <section id="mobile" class="works-section" data-cat="mobile"></section>
+    <section id="other" class="works-section" data-cat="other"></section>
+  </main>
+
+  <footer id="footer" class="footer"></footer>
+
+  <!-- 내용은 js/data.js 에서 수정하세요 -->
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
