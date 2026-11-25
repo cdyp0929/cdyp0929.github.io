@@ -110,7 +110,7 @@ const PORTFOLIO = {
     {
       id: 'portfolio',
       category: 'web',
-      title: '채동엽 포트폴리오 웹사이트',
+      title: '포트폴리오 웹사이트',
       summary: 'Figma로 설계하고 웹으로 구현한 개인 포트폴리오 사이트입니다.',
       thumbnail: 'images/works/portfolio/thumb.jpg',
       detail: 'images/works/portfolio/detail.jpg',
